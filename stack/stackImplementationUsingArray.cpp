@@ -94,6 +94,8 @@ int main(){
     }
     cout<<endl;
 
+    s.push(1000);
+
     cout<<"The size of stack: "<<s.getSize()<<endl;
 
 
