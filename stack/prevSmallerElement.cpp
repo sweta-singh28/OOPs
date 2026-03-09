@@ -1,6 +1,6 @@
 #include<iostream>
-#include<stack>
 #include<vector>
+#include<stack>
 using namespace std;
 
 int main(){
@@ -16,29 +16,19 @@ int main(){
     st.push(-1);
     vector<int>ans(arr.size());
 
-    for(int i=arr.size()-1; i>=0; i--){
+    for(int i=0; i<arr.size(); i++){
         int curr = arr[i];
-
-        //ans is in stack, dhundh k laao 
-        while(st.top() >= curr){
+        while(curr <= st.top()){
             st.pop();
         }
-
-        //loop se bahar aake chhota element mil chuka h, ans ko store krlo
         ans[i] = st.top();
-        //curr element ko push krdo 
         st.push(curr);
     }
 
-    cout<<"Printing the ans: "<<endl;
-
+    //printing ans
     for(int i=0; i<ans.size(); i++){
         cout<<ans[i]<<" ";
     }
 
-
-
-
     return 0;
-    
 }

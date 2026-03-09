@@ -23,7 +23,7 @@ class Animal{
     //2. parameterised Constructor 
     Animal(int age){
         this->age = age;
-        cout<<"Parametrised constructor is called "<<endl;
+        cout<<"Parametrised constructor 1 is called "<<endl;
     }
     Animal(int age, int weight){
         this->age = age;
