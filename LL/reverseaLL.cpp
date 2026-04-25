@@ -95,8 +95,8 @@ int main(){
     print(head);
     cout<<endl;
 
-     Node* prev = NULL;
-     Node* curr = head;
+    Node* prev = NULL;
+    Node* curr = head;
 
     head = reverse(prev, curr);
     
